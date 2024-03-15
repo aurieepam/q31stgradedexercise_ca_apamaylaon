@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1st Graded Exercise</title>
+</head>
+<body>
+    <div id="result"> </div>
+    <script>
+        var num1 = parseFloat(prompt("Enter a first number: "));
+        var num2 = parseFloat(prompt("Enter a second number: "));
+
+        document.getElementById("result").innerHTML = "The inputs before swapping: " + num1 + " and " + num2 + ".<br>";
+        
+        var aft = num1;
+        num1 = num2;
+        num2 = aft;
+
+        var sum = num1 + num2;
+
+        document.getElementById("result").innerHTML += "After swapping: " + num1 + " and " + num2 + ".<br>";
+        document.getElementById("result").innerHTML += "The sum of the two numbers is " + sum + ".";
+    </script>
+
+</body>
+</html>
